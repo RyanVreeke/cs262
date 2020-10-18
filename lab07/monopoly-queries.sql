@@ -8,14 +8,14 @@ SELECT *
   FROM Player
   ;
 
+-- Get the playerPropertiesType records.
+SELECT *
+  FROM PlayerPropertiesType
+  ;
+
 -- Get the playerProperties records.
 SELECT *
   FROM PlayerProperties
-  ;
-
--- Get the playerRealEstate records.
-SELECT *
-  FROM PlayerRealEstate
   ;
 
 -- Get all the users with Calvin email addresses.
@@ -34,6 +34,6 @@ ORDER BY score DESC
 -- Get the cross-product of all the tables.
 SELECT *
   FROM Player, PlayerGame,
-  PlayerProperties, PlayerRealEstate,
+  PlayerPropertiesType, PlayerProperties,
   Game
   ;
