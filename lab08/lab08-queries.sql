@@ -51,10 +51,14 @@
 --  on 2006-06-28 13:20:00.
 
 -- SELECT name
---   FROM Game, Player, PlayerGame
---  WHERE Game.ID = 2
---    AND score = 700
---    AND Player.ID = 3
+--   FROM Player, PlayerGame
+--  WHERE PlayerGame.playerID = Player.ID
+--    AND score = (
+--       SELECT max(score)
+-- 	    FROM Game, PlayerGame
+-- 	   WHERE time = '2006-06-28 13:20:00'
+-- 	     AND PlayerGame.gameID = Game.ID
+--            )
 --      ;
 
 -- So what does that P1.ID < P2.ID clause do in the
