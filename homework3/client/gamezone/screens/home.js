@@ -7,6 +7,7 @@ export default function Home({ navigation }) {
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState([]);
 
+    // I am getting all of the players in game 4 with this request and displaying the data.
     useEffect(() => {
         fetch('https://ghastly-phantom-40830.herokuapp.com/showgameplayers/4')
             .then((response) => response.json())
