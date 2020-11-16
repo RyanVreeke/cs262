@@ -1,0 +1,9 @@
+    I checked the userContext.js file where I applied the prettier formatting
+that VS Code allows you to use. I also then applied the default spell checker
+given to you in the pallete of VS Code. Also in the module I applied some
+JSDoc comments that was also apart of the pallete in VS Code once I installed 
+an extension for it. I then used that to give comments to the functions in
+the userContext.js file where it would give the parameters for the functions.
+I also went through the module making sure there were not unused variables as
+well. Sometimes you will import something that you don't end up using and I 
+made sure that this wasn't the case.
